@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 CIT82: Implementing HTML Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Implementing HTML Elements</h1>
+    </header>
+    <main>
+        <h2>Example Dropdown Button</h2>
+        <span class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <table class="dropdown-content">
+             <tr>
+                <td>
+                    <a href="#">Link 1</a>
+                </td>
+             </tr> 
+             <tr>
+                <td>
+                    <a href="#">Link 2</a>
+                </td>
+             </tr> 
+             <tr>
+                <td>
+                    <a href="#">Link 3</a>
+                </td>
+             </tr>
+           </table>
+        </span>
+        <p>For this button I used the &lt;span&gt;, &lt;button&gt; and &lt;table&gt; tags including &lt;tr&gt; and &lt;td&gt; for the rows and data</p>
+        <p> I also had to use a bit of CSS</p>
+
+        <h3>Here is the HTML Code:</h3>
+        <pre>
+            &lt;button class="dropbtn">Dropdown&lt;/button&gt;
+            &lt;table class="dropdown-content"&gt;
+             &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;a href="#"&gt;Link 1&lt;/a&gt;
+                &lt;/td&gt;
+             &lt;/tr&gt; 
+             &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;a href="#"&gt;Link 2&lt;/a&gt;
+                &lt;/td&gt;
+             &lt;/tr&gt; 
+             &lt;tr&gt;
+                &lt;td&gt;
+                    &lt;a href="#"&gt;Link 3&lt;/a&gt;
+                &lt;/td&gt;
+             &lt;/tr&gt;
+           &lt;/table&gt;
+        </pre>
+        <h3>And Here is the CSS Code:</h3>
+        <pre>
+            /* Dropdown Button */
+            .dropbtn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px;
+                font-size: 16px;
+                border: none;
+              }
+              
+              /* The container <div> - needed to position the dropdown content */
+              .dropdown {
+                position: relative;
+                display: inline-block;
+              }
+              
+              /* Dropdown Content (Hidden by Default) */
+              .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f1f1f1;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                z-index: 1;
+              }
+              
+              /* Links inside the dropdown */
+              .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+              }
+              
+              /* Change color of dropdown links on hover */
+              .dropdown-content a:hover {background-color: #40c690;}
+              
+              /* Show the dropdown menu on hover */
+              .dropdown:hover .dropdown-content {display: block;}
+              
+              /* Change the background color of the dropdown button when the dropdown content is shown */
+              .dropdown:hover .dropbtn {background-color: #3e8e41;} 
+            
+              table, tr, td {
+                text-align: center;
+                border: 1px black solid;
+             }
+        </pre>
+    </main>
+    <footer>
+        <section>
+            <p>Contact Info:</p>
+            Andrew Bier
+            <p>Email: <a href="mailto:notmyemail@gmail.com">notmyemail@gmail.com</a></p>
+            <p>Phone#: <a href="tel:5591234567">(559)123-4567</a></p>
+        </section>
+    </footer>
+</body>
+</html>
