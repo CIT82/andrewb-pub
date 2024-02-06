@@ -1,0 +1,28 @@
+
+.box {
+    background-color: rgb(8, 110, 144);
+    border: 1px solid rgb(4, 4, 109);
+    min-height: 50px;
+    font-size: 2rem;
+}
+
+h1 {
+ text-align: center;
+ color: aliceblue;
+}
+
+body {
+ color: aliceblue;
+ background-color: rgb(10, 114, 204);
+}
+
+.accordion-button:not(.collapsed) {
+  color: aliceblue;
+ background-color: rgb(9, 137, 94);
+}
+
+.accordion-button.collapsed, .accordion-item {
+ color: aliceblue;
+ background-color: rgb(10, 169, 169);
+}
+
