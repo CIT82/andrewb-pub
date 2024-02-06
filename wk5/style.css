@@ -1,9 +1,6 @@
-
-.box {
-    background-color: rgb(8, 110, 144);
-    border: 1px solid rgb(4, 4, 109);
-    min-height: 50px;
-    font-size: 2rem;
+body {
+ color: aliceblue;
+ background-color: rgb(10, 114, 204);
 }
 
 h1 {
@@ -11,9 +8,19 @@ h1 {
  color: aliceblue;
 }
 
-body {
- color: aliceblue;
- background-color: rgb(10, 114, 204);
+h2 {
+  text-align: center;
+}
+
+p {
+ text-align: center;
+}
+
+.box {
+    background-color: rgb(8, 110, 144);
+    border: 1px solid rgb(4, 4, 109);
+    min-height: 50px;
+    font-size: 2rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -25,4 +32,3 @@ body {
  color: aliceblue;
  background-color: rgb(10, 169, 169);
 }
-
